@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+    <!-- For the icon -->
+    <link rel="icon" href="favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <!-- <link rel="manifest" href="/site.webmanifest" /> -->
+    <!-- <meta name="msapplication-TileColor" content="#da532c" /> -->
+    <!-- For the icon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ff5252" />
+    <meta name="description" content="Get Atrable" />
+    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      console.log("hello world!");
+      console.log(navigator.userAgent);
+      $(document).ready(function () {
+        if (navigator.userAgent.toLowerCase().indexOf("android") > -1) {
+          window.location.href =
+            "https://play.google.com/store/apps/details?id=PACKAGEIDHERE";
+        }
+        if (navigator.userAgent.toLowerCase().indexOf("iphone") > -1) {
+          window.location.href =
+            "https://itunes.apple.com/lb/app/PACKAGEIDHERE";
+        }
+      });
+    </script>
+    <link rel="stylesheet" href="static/App.css" />
+    <style>
+      .App {
+        text-align: center;
+      }
+
+      .App-logo {
+        height: 36vmin;
+        pointer-events: none;
+      }
+
+      @media (prefers-reduced-motion: no-preference) {
+        .App-logo {
+          animation: App-logo-bounce infinite 2s ease-in-out;
+        }
+      }
+
+      .App-header {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(10px + 2vmin);
+        color: white;
+      }
+
+      .App-link {
+        color: #ff5252;
+        text-decoration: none;
+      }
+
+      .button {
+        border: none;
+        border-radius: 17.5px;
+        padding-top: 17.5px;
+        padding-bottom: 17.5px;
+        width: 90vw;
+        min-width: 100px;
+        max-width: 500px;
+        font-size: 25px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .black-button {
+        background-color: black;
+        color: white;
+      }
+
+      .whitesmoke-button {
+        background: whitesmoke;
+        color: black;
+      }
+
+      .google-style-button {
+        background: repeating-linear-gradient(
+          60deg,
+          #4885ed,
+          #4885ed 100px,
+          #ff5252 100px,
+          #ff5252 200px,
+          #f4c20d 200px,
+          #f4c20d 300px,
+          #4885ed 300px,
+          #4885ed 400px,
+          #3cba54 400px,
+          #3cba54 500px,
+          #ff5252 500px,
+          #ff5252 600px
+        );
+        color: black;
+      }
+
+      .shadow {
+        transition: 200ms;
+      }
+
+      .shadow:hover {
+        box-shadow: 0px 7.5px 15px rgb(174, 174, 174);
+      }
+
+      @keyframes App-logo-bounce {
+        0% {
+          transform: translateY(15px);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
+        100% {
+          transform: translateY(15px);
+        }
+      }
+    </style>
+
+    <title>Get Atrable</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="App">
+        <header class="App-header">
+          <img src="roundLogo.svg" class="App-logo shadow" alt="logo" />
+          <div style="height: 75px"></div>
+          <a
+            class="button google-style-button shadow"
+            style="text-decoration: none"
+            href="https://play.google.com/store/apps/details?id=PACKAGEIDHERE"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get on Google Play
+          </a>
+          <div style="height: 25px"></div>
+          <a
+            class="button black-button shadow"
+            style="text-decoration: none"
+            href="https://itunes.apple.com/lb/app/PACKAGEIDHERE"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Get on Apple Appstore</a
+          >
+          <div style="height: 50px"></div>
+          <a
+            class="button whitesmoke-button shadow"
+            style="text-decoration: none"
+            href="https://about.atrable.com"
+          >
+            About Atrable</a
+          >
+        </header>
+      </div>
+    </div>
+  </body>
+</html>
