@@ -18,9 +18,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#ff5252" />
     <meta name="description" content="Get Atrable" />
-    <!-- <link rel="manifest" href="/site.webmanifest" /> -->
-    <!-- <meta name="msapplication-TileColor" content="#da532c" /> -->
-    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       $(document).ready(function () {
@@ -49,9 +46,9 @@
       }
 
       .App-logo {
-        height: 32vmin;
+        height: 24vmin;
         pointer-events: none;
-        border-radius: 8vmin;
+        border-radius: 6vmin;
       }
 
       @media (prefers-reduced-motion: no-preference) {
@@ -123,16 +120,15 @@
       @keyframes App-logo-bounce {
         0% {
           transform: translateY(15px);
-
-          box-shadow: 0px 0px 0px rgb(174, 174, 174);
+          box-shadow: 0px 0px 0px rgba(112, 144, 156, 0.3);
         }
         50% {
           transform: translateY(-15px);
-          box-shadow: 0px 7.5px 15px rgb(174, 174, 174);
+          box-shadow: 0px 5px 10px rgba(112, 144, 156, 0.3);
         }
         100% {
           transform: translateY(15px);
-          box-shadow: 0px 0px 0px rgb(174, 174, 174);
+          box-shadow: 0px px 0px rgba(112, 144, 156, 0.3);
         }
       }
     </style>
@@ -159,10 +155,19 @@
         >Get on Apple Appstore
       </a>
       <div style="height: 50px"></div>
-      <a
+      <!-- <a
         class="link"
         style="font-size: 25px; font-weight: bold"
         href="https://about.atrable.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        About Atrable
+      </a> -->
+      <a
+        class="link"
+        style="font-size: 25px; font-weight: bold"
+        href="https://seihyun.atrable.com/logs/atrable"
         target="_blank"
         rel="noopener noreferrer"
       >
