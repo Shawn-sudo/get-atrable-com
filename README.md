@@ -1,3 +1,6 @@
-# atrable-get
- Source code for get.atrable.com
- Used for www.atrable.com temporarily
+# Get Atrable
+ Source code for [get.atrable.com](https://get.atrable.com)
+
+On Atrable, share your not-so-special moments
+
+[More about Atrable](https://www.atrable.com)
