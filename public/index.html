@@ -8,14 +8,17 @@
     <meta name="theme-color" content="#705df2" />
     <meta name="description" content="Get Atrable." />
     <script>
-      // if (navigator.userAgent.toLowerCase().indexOf("android") > -1) {
-      //   window.location.href =
-      //     "https://play.google.com/store/apps/details?id=com.atrable.atrable";
-      // }
-      if (navigator.userAgent.toLowerCase().indexOf("iphone") > -1) {
-        window.location.href =
-          "https://apps.apple.com/us/app/atrable/id1630551248";
-      }
+      window.onload = (event) => {
+        // if (navigator.userAgent.toLowerCase().indexOf("android") > -1) {
+        //   window.location.href =
+        //     "https://play.google.com/store/apps/details?id=com.atrable.atrable";
+        // }
+        if (navigator.userAgent.toLowerCase().indexOf("iphone") > -1) {
+          window.location.replace(
+            "https://apps.apple.com/us/app/atrable/id1630551248"
+          );
+        }
+      };
     </script>
     <link rel="stylesheet" href="static/App.css" />
     <style>
