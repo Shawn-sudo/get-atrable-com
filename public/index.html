@@ -9,11 +9,11 @@
     <meta name="description" content="Get Atrable." />
     <script>
       window.onload = (event) => {
-        // if (navigator.userAgent.toLowerCase().indexOf("android") > -1) {
-        //   window.location.href =
-        //     "https://play.google.com/store/apps/details?id=com.atrable.atrable";
-        // }
-        if (navigator.userAgent.toLowerCase().indexOf("iphone") > -1) {
+        if (navigator.userAgent.toLowerCase().indexOf("android") > -1) {
+          window.location.replace(
+            "https://play.google.com/store/apps/details?id=com.atrable.atrable"
+          );
+        } else if (navigator.userAgent.toLowerCase().indexOf("iphone") > -1) {
           window.location.replace(
             "https://apps.apple.com/us/app/atrable/id1630551248"
           );
